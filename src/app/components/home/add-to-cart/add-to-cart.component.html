@@ -1,0 +1,58 @@
+<p>add-to-cart works!</p>
+<div class="container" style="margin: 40px auto;">
+  <div class="row" *ngIf="cartTotal !==0 && !loading">
+    <div class="col-md-7 priceDetailBox">
+      <div class="card cartCard">
+        <div class="cardHeader">
+          <h5 class="card-title titleCard">My Cart ({{cartTotal}})</h5>
+          <button class="clearCartBtn" (click)="onClearCart()">Empty
+            Cart</button>
+        </div>
+        <div class="card-body" *ngFor="let item of cartItems">
+          <hr>
+          <span>
+            <div class="innercard">
+              <img class="card imageCard" [src]="item.cartProductimageUrl" height="100px" alt=" Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{item.cartProductName}}</h5>
+                <p class="productPrice">{{item.cartfinalProductPrice | currency: 'INR'}}</p>
+              </div>
+            </div>
+            <div class="quantity">
+              <input type="button" value="+" class="plus" (click)="onIncrement( item.cartId)">
+              <input type="number" step="1" max="99" min="1" [value]="item.cartProductQuantity" title="Qty" class="qty"
+                size="4">
+              <input type="button" value="-" class="minus" [disabled]="item.cartProductQuantity == 1"
+                (click)="onDecrement(item.cartId)">
+            </div>
+            <button class="btnSingleItem" (click)="clearItem(item.cartId)">Remove Item</button>
+          </span>
+        </div>
+        <hr>
+        <button class="button" (click)="onCheckOut()">Place Order </button>
+      </div>
+    </div>
+    <div class="col-md-4 totalPriceBox">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="nav-link disabled">Price Details</h5>
+          <hr>
+          <div class="card-contentBox">
+            <h5 class="nav-link disabled">Total Amount: <strong>{{totalPrice | currency: 'INR'}}</strong></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="center-loader" *ngIf="loading">
+    <app-loader></app-loader>
+  </div>
+
+  <div class="row" *ngIf="cartTotal === 0 && !loading">
+    <div class="center-loader">
+      <img src="../../../../assets/images/Empty Cart.png" width="100%" height="100%" alt="Empty Cart">
+    </div>
+  </div>
+
+</div>

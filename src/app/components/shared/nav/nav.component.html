@@ -1,0 +1,15 @@
+<div class="col-md-12 navbar fixed-top">
+  <span class="col-md-2 homeText">
+    <app-header></app-header>
+  </span>
+  <span class="col-md-6">
+    <div class="rightPanel">
+      <a class="btn btn-info logOutBtn" routerLink="login" title="Login" *ngIf="!IsAuthenticated">Login</a>
+      <span class="p-2 text-light userName" *ngIf="IsAuthenticated">
+        {{loginUser ? 'Hi! ' + loginUser : 'Hi! ' +userName }}</span>
+      <a class="btn btn-info logOutBtn" (click)="onLogout()" title="Logout" routerLink="../"
+        *ngIf="IsAuthenticated">Logout</a>
+      <a (click)="showCartItem()" title="go to Cart" class="cartBtn">Cart <i class='fab fa-opencart'></i></a>
+    </div>
+  </span>
+</div>

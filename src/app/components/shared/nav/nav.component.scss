@@ -1,0 +1,40 @@
+.userName {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.logOutBtn {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.homeText:focus {
+  outline: none;
+}
+
+.cartBtn {
+  font-size: 25px;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  padding: 1%;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0px 3px 7px 3px #28c79a;
+  background-color: #22898c;
+}
+
+.searchField {
+  width: 1000px;
+  border-radius: 4px;
+}
+.rightPanel {
+  float: right;
+  display: flex;
+}
+.fab {
+  font-size: 24px;
+}

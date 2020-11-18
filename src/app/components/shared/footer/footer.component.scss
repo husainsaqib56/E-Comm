@@ -1,0 +1,29 @@
+.footer-box-text,
+a {
+  color: white;
+  padding: 5px;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.footer-box-text a:hover {
+  color: #757686;
+  background-color: transparent;
+}
+
+.footer {
+  /* background-color: black;
+  text-align: center;
+  font-size: 11px; */
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  padding-left: 10px;
+  display: flex;
+}

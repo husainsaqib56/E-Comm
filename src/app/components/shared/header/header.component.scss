@@ -1,0 +1,11 @@
+.header {
+  display: inline-flex;
+}
+.headerText {
+  color: white;
+  font-size: 30px;
+}
+
+.headerText:focus {
+  outline: none;
+}

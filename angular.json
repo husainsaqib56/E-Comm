@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           },
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "E-Comm"
+    }
+  },
+  "defaultProject": "E-Comm",
+  "cli": {
+    "analytics": "3d7f0c13-143a-4a79-97dd-9828d0b01663"
+  }
 }

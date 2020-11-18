@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~ngx-toastr/toastr";
+
+body {
+  height: 100%;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #222;
+  /* background: #f8f8f8; */
+  font-weight: 400;
+  /* font-family: Poppins !important; */
+}
+.cart-item {
+  font-size: small;
+}
+
+.filters {
+  font-size: small;
+}
+
+.card,
+.btn {
+  border-radius: 0 !important;
+}
+
+.list-group-item:last-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.center-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
+}
+
+.md-spinner {
+  font-size: 32px !important;
+}

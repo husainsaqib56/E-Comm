@@ -1,0 +1,50 @@
+.titleSummary {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.card {
+  border: none !important;
+  margin: 100px auto;
+}
+
+.inner-card {
+  display: flex;
+  box-shadow: 5px 5px 37px 13px rgba(96, 255, 208, 0.71);
+}
+
+.imageCard {
+  padding: 60px;
+}
+
+.card-body-text {
+  align-content: center;
+  margin: 110px auto;
+}
+.subName {
+  font-size: 30px;
+}
+
+.subPrice {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.button {
+  border: 1px solid #e5e5e5;
+  padding: 5px;
+  color: #888;
+  font-weight: 600;
+  font-size: 30px;
+  border-radius: 4px;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.button:hover {
+  border: 1px solid transparent;
+  background: #16a028;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
